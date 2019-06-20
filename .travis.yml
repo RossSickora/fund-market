@@ -1,3 +1,10 @@
 language: node_js
 node_js:
-  - node
+- node
+deploy:
+  provider: s3
+  access_key_id: AKIAZKH5YQZ5I5B2V3KR
+  secret_access_key:
+    secure: aZVP14WIKH/Dr5Jh78r/7iwrFGMcN29zCZ2h9ZPMyiKe505J9DBB0NiolYHBL47o9ToKRLgfZ1ccOsMdz4paEtD0RTkveRmKRe//sw42e3OGTbq0ypq7EzoFrr44nEDEkwEF2qA4lsRrWMXaWXyVjg1k59TiA0/SBKJcPS9jdb3zIlmAF2I5rb2VaioFuQyIxEgBSAfpLixtGGPSWjDea04fIrrwFFrGZjctjeNb5jc/46i4IVTS1y5k8mi44wux9IwcjcSSkRL+G7xePR5acXE3VAr1CEUGfSNy3j+BywYhi9eKWWcPphX7NlWouGIGmGnYyREdLUWEaG7cLVEEWPNMdSxdE06Mp64BSW1xv5dTUOfaQx4ul40+T39etusnXGhZ7jRiSmDobYx9rOO6Eyk+VhBP15e1lMYJbR5fMAkgUUH4LPKRFW4jFBT+lQRYYXBp23OFwEpvJ4nfhlWuvX9k0h4V+RHnnW9ZmjaRLAhlwFEvMLFYXEYHy/wvKrO4W7VWqWNjYzb1ivk/F9l2Xe57DansagDHDc2jab8H+hC8dIFB4Q/J9UMU3X7FdZbIzA1ajYhcAjENXo3H/Phk/HKQFItFOUeTcImA6i9aG9v+XS9sQ+IJZ40eBRJmkE3G8ghbF5PoRQoufJR1LQEGHne51YWvKEC2dk9+CA9LUHo=
+  bucket: fund-market
+  skip_cleanup: true
