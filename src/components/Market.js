@@ -4,6 +4,7 @@ import {Auth, API, graphqlOperation} from 'aws-amplify'
 
 import AppBar from './shared/AppBar'
 import FundMutation from '../mutations/FundMutation'
+import { Button } from '@material-ui/core';
 
 class Market extends Component {
 
@@ -45,7 +46,9 @@ class Market extends Component {
       <div className="Market">
         <AppBar />
         <h1>Hello, world!</h1>
-        <button onClick={this.saveFund('test', 1)} />
+        <Button onClick={this.saveFund('test', 1)} >
+          Our great button
+        </Button>
       </div>
     );
   }
