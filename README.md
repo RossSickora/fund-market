@@ -1,5 +1,25 @@
 [![Build Status](https://travis-ci.org/RossSickora/fund-market.svg?branch=master)](https://travis-ci.org/RossSickora/fund-market)
 
+# Fund Market
+
+This project is the user interface for demonstrating incremental delivery via continuous integration and deployment. 
+
+Practices include or will include:
+- Unit Tests
+- Integration Tests
+- User Interface Snapshotting via [Jest](https://jestjs.io/)
+- Leveraging a remote build server
+- Leveraging a remote deployment server
+- Leveraging a cloud storage/hosting solution
+- Static code analysis
+- Software Development 
+- A/B Testing
+- Feature Toggling
+- Cloud Log aggregation 
+- More tbd
+
+Based on the technologies outlined in [This Video](https://youtu.be/qBNYmYRlTpU)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -45,26 +65,3 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
