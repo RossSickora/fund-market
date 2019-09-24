@@ -1,1 +1,1 @@
-export default 'mutation createFund($description: String!, $riskLevel: Int!) { createFund(description: $description, riskLevel: $riskLevel) { code }}'
+export default 'mutation createFund($description: String!, $riskLevel: Int!) { createFund(description: $description, riskLevel: $riskLevel) { fundID }}'

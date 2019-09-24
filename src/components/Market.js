@@ -30,7 +30,7 @@ class Market extends Component {
       let result = await API.graphql(
           graphqlOperation(FundMutation, {description: desc, riskLevel: risk})
         );
-        if(result.data.createFund.code !== 200) {
+        if(result.data.createFund.fundID === undefined) {
           alert('an Error occured saving the fund, please try again');
         }
         else {
