@@ -23,10 +23,12 @@ class Market extends Component {
     }
   }
 
-  async saveFund(description, riskLevel) {
+  async saveFund() {
+    const desc = "fund1";
+    const risk = 1;
     try {  
       let result = await API.graphql(
-          graphqlOperation(FundMutation, {description, riskLevel})
+          graphqlOperation(FundMutation, {desc, risk})
         );
         if(result.data.createFund.code !== 200) {
           alert('an Error occured saving the fund, please try again');
@@ -46,7 +48,7 @@ class Market extends Component {
       <div className="Market">
         <AppBar />
         <h1>Hello, world!</h1>
-        <Button onClick={this.saveFund('test', 1)} >
+        <Button onClick={this.saveFund} >
           Our great button
         </Button>
       </div>
