@@ -24,11 +24,11 @@ class Market extends Component {
   }
 
   async saveFund() {
-    const desc = "fund1";
+    const desc = 'fund1';
     const risk = 1;
     try {  
       let result = await API.graphql(
-          graphqlOperation(FundMutation, {desc, risk})
+          graphqlOperation(FundMutation, {description: desc, riskLevel: risk})
         );
         if(result.data.createFund.code !== 200) {
           alert('an Error occured saving the fund, please try again');
