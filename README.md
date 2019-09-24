@@ -4,7 +4,7 @@
 
 This project is the user interface for demonstrating incremental delivery via continuous integration and deployment. 
 
-Practices include or will include:
+*Practices include or will include:*
 - Unit Tests
 - Integration Tests
 - User Interface Snapshotting via [Jest](https://jestjs.io/)
