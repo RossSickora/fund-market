@@ -3,8 +3,10 @@ import {Auth, API, graphqlOperation} from 'aws-amplify'
 //import ReactDom from 'react-dom';
 
 import AppBar from './shared/AppBar'
+import FundItem from './shared/FundItem'
 import FundMutation from '../mutations/FundMutation'
 import { Button } from '@material-ui/core';
+
 
 class Market extends Component {
 
@@ -12,6 +14,8 @@ class Market extends Component {
     super(props);
     this.state = {user: undefined}
   }
+
+
 
   async componentWillMount() {
     try {
@@ -47,16 +51,14 @@ class Market extends Component {
     return (
       <div className="Market">
         <AppBar />
-        <h1>Hello, world!</h1>
+        <FundItem />
         <Button onClick={this.saveFund} >
-          Our great button
+          Add Fund
         </Button>
       </div>
     );
   }
 }
-
-
 
 
 export default Market;
